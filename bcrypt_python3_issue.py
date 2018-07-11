@@ -1,6 +1,9 @@
 import bcrypt
 
-# work around for storing my hashed passwords in the db. I decode('utf-8') the hashed PW then store it in the db. Because when validating the hashed pw on login it continues to throw a Invalid Salt error.
+# work around for storing my hashed passwords in the db. 
+# I decode('utf-8') the hashed PW then store it in the db. 
+# Because when validating the hashed pw on login it continues 
+# to throw a Invalid Salt error.
 db_new_passwordhash = bcrypt.hashpw(postData['password'].encode(), bcrypt.gensalt())
             
     User.objects.create(
@@ -20,4 +23,5 @@ if bcrypt.checkpw(postData['password'].encode(), db_password.encode()):
 else:
     print('it didnt work')
 
-# without decoding, it just keeps giving Invalid Salt. Any suggestions on possible problems would be great.
+# without decoding, it just keeps giving Invalid Salt. Any suggestions on 
+# possible problems would be great.
