@@ -4,6 +4,7 @@ import bcrypt
 # I decode('utf-8') the hashed PW then store it in the db. 
 # Because when validating the hashed pw on login it continues 
 # to throw a Invalid Salt error.
+
 db_new_passwordhash = bcrypt.hashpw(postData['password'].encode(), bcrypt.gensalt())
             
     User.objects.create(
