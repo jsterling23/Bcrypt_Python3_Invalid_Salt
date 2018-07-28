@@ -25,4 +25,4 @@ else:
     print('it didnt work')
 
 # without decoding, it just keeps giving Invalid Salt. Any suggestions on 
-# possible problems would be great.
+# possible problems would be great. Thanks!
