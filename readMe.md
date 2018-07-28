@@ -9,4 +9,4 @@ Found a way around this Invalid Salt issue that was plaguing me for hours.
 
 ## Contributing
 
-If you know something better. Share please.
+If you know something better. Share please. Thanks!
